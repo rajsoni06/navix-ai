@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Navix AI — Adaptive Travel Intelligence" },
+      { name: "description", content: "AI-powered travel platform with real-time trip replanning, smart budget optimization, and adaptive route intelligence." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Navix AI — Adaptive Travel Intelligence" },
+      { property: "og:description", content: "AI-powered travel platform with real-time trip replanning, smart budget optimization, and adaptive route intelligence." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Navix AI — Adaptive Travel Intelligence" },
+      { name: "twitter:description", content: "AI-powered travel platform with real-time trip replanning, smart budget optimization, and adaptive route intelligence." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2db6b2ae-f1ad-4786-a8c7-bb9f5a28a8a6/id-preview-ffa5746e--7b6d90a7-f2cf-4ba0-81f1-aac5f187d717.lovable.app-1778218143511.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2db6b2ae-f1ad-4786-a8c7-bb9f5a28a8a6/id-preview-ffa5746e--7b6d90a7-f2cf-4ba0-81f1-aac5f187d717.lovable.app-1778218143511.png" },
     ],
     links: [
       {
