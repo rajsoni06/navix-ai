@@ -21,13 +21,10 @@ app.use((req, res) => {
   const key = process.env.GOOGLE_MAPS_API_KEY || '';
   if (indexHtml) {
     const inject = `<script>window.__GOOGLE_MAPS_API_KEY = ${JSON.stringify(key)};</script>`;
-    // insert before closing </head>
     const html = indexHtml.replace('</head>', `${inject}</head>`);
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
     return res.send(html);
   }
-
-  // fallback: send file directly
   res.sendFile(path.join(distDir, 'index.html'));
 });
 
